@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import ProductList from './Components/ProductList';
-//import ProductItem from './Components/ProductItem';
+import Data from './data.json';
 function App() {
   return (
     <>

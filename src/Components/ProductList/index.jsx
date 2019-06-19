@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductItem from '../ProductItem';
+import result from '../../data.json';
 export default function ProductList() {
     return(
         <main>
@@ -20,7 +21,8 @@ export default function ProductList() {
                         <div className="tab-content" id="myTabContent">
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div className="row">
-                                    <ProductItem />    
+                                    {result.data.map(elem => <ProductItem {...elem} />)}
+                                    <ProductItem />
                                 </div>
                             </div>
                         </div>
